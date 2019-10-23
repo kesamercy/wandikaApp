@@ -15,12 +15,18 @@
     <body>
         <form action="">
             <div class="loginBox">
-                Sign Up here
-                <input type="email" name="email" value="email" onFocus="field_focus(this, 'email');"
-                    onblur="field_blur(this, 'email');" class="email" />
-                <input type="password" name="password" value="password" onFocus="field_focus(this, 'password');"
-                    onblur="field_blur(this, 'email');" class="email" />
-                <input type="button" value="submit" class="submitButton">
+                <br> Sign Up here <br><br>
+                <input type="text" name="firstName" value="First Name">
+                <input type="text" name="middleName" value="Middle Name">
+                <input type="text" name="lastName" value="Last Name">
+                <input type="email" name="email" value="Email">
+                <input type="password" name="password" value="Password">
+                <input type="password" name="confirmPasssword" value="Confirm Password">
+                <input type="date" name="dob" value="Date of Birth">
+                <input type="text" name="city" value="City">
+                <input type="text" name="country" value="Country">
+
+                <input type="submit" value="submit" class="submitButton">
             </div>
 
         </form>

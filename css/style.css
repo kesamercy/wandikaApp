@@ -1,14 +1,13 @@
 :root {
     --brickRed: #962715;
-    --blueBlack: #021c1e;
-    --cadetBlue: #004445;
-    --rain: #2c7873;
+    --glossWhite: #ffffff;
+    --matteBlack: #1e1e20;
+    --mediumGray: #bbc3c6;
 }
 
 body {
     color: white;
     font-family: Times, Times New Roman, Georgia, serif;
-    ;
 }
 
 .navBar li {
@@ -44,7 +43,7 @@ body {
 
 .aboutText {
     width: 60%;
-    font-family: 'Roboto Mono';
+    font-family: "Roboto Mono";
     text-align: center;
 }
 
@@ -68,7 +67,7 @@ body {
     border-bottom: #ccc 2px solid;
     padding: 8px;
     width: 250px;
-    color: #AAAAAA;
+    color: #aaaaaa;
     margin-top: 10px;
     font-size: 1em;
     border-radius: 4px;
@@ -86,6 +85,18 @@ body {
 .submitButton {
     margin-top: 50px;
 }
+
+
+/* about page styling */
+
+.aboutPageContainer {
+    background: rgb(187, 195, 198);
+    background: linear-gradient( 90deg, rgba(187, 195, 198, 1) 4%, rgba(251, 251, 251, 1) 24%, rgba(251, 251, 251, 1) 74%, rgba(187, 195, 198, 1) 96%);
+    height: 100vh;
+    margin: 0;
+}
+
+.casetteImage {}
 
 
 /* begining of the code that controls the slide show images */
@@ -141,7 +152,7 @@ body {
 /* this code is responsible for the slide show text.. */
 
 .cb-slideshow li div h1 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-family: "BebasNeueRegular", "Arial Narrow", Arial, sans-serif;
     font-size: 100px;
     float: right;
     padding-right: 50px;
@@ -150,7 +161,7 @@ body {
 }
 
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(../images/1.jpg)
+    background-image: url(../images/1.jpg);
 }
 
 .cb-slideshow li:nth-child(2) span {
@@ -260,7 +271,7 @@ body {
         -webkit-transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -283,7 +294,7 @@ body {
         -moz-transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -306,7 +317,7 @@ body {
         -o-transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -329,7 +340,7 @@ body {
         -ms-transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -352,7 +363,7 @@ body {
         transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -373,14 +384,14 @@ body {
         -webkit-transform: scale(0.5);
     }
     19% {
-        opacity: 0
+        opacity: 0;
     }
     25% {
         opacity: 0;
         -webkit-transform: scale(5);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
