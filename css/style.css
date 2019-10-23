@@ -41,12 +41,6 @@ body {
     padding-top: 20px;
 }
 
-.aboutText {
-    width: 60%;
-    font-family: "Roboto Mono";
-    text-align: center;
-}
-
 .pageTitle {}
 
 .slogan {}
@@ -89,14 +83,48 @@ body {
 
 /* about page styling */
 
-.aboutPageContainer {
+.aboutPage_container {
     background: rgb(187, 195, 198);
     background: linear-gradient( 90deg, rgba(187, 195, 198, 1) 4%, rgba(251, 251, 251, 1) 24%, rgba(251, 251, 251, 1) 74%, rgba(187, 195, 198, 1) 96%);
     height: 100vh;
+    width: 100%;
     margin: 0;
+    color: var(--matteBlack);
 }
 
-.casetteImage {}
+.aboutPage_casetteImage {
+    width: 150px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 150px;
+}
+
+.aboutPage_typeWritter {
+    width: 300px;
+    float: right;
+    margin-top: 250px;
+}
+
+.aboutPage_aboutTitle {
+    font-weight: bold;
+}
+
+.aboutPage_aboutText {
+    font-family: "Roboto Mono";
+    text-align: left;
+    margin-left: 400px;
+    margin-top: 200px;
+    letter-spacing: 2px;
+}
+
+.aboutPage_aboutDescription {
+    width: 450px;
+}
+
+.aboutPage_footerWord {
+    margin-top: 80px;
+    margin-left: 70px;
+}
 
 
 /* begining of the code that controls the slide show images */
