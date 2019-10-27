@@ -8,6 +8,7 @@
 body {
     color: white;
     font-family: Times, Times New Roman, Georgia, serif;
+    background: gray;
 }
 
 .navBar li {
@@ -45,15 +46,7 @@ body {
 
 .slogan {}
 
-.loginBox {
-    background: white;
-    width: 300px;
-    border-radius: 6px;
-    margin: 180px auto 0 600px;
-    padding: 0px 0px 70px 0px;
-    color: black;
-    position: absolute;
-}
+.loginBox {}
 
 .email {
     background: #ecf0f1;
@@ -124,6 +117,49 @@ body {
 .aboutPage_footerWord {
     margin-top: 80px;
     margin-left: 70px;
+}
+
+
+/* styling for the login modal */
+
+.loginPage_loginBox {
+    background: var(--glossWhite);
+    width: 300px;
+    height: 60vh;
+    border-radius: 6px;
+    margin: 180px auto 0 600px;
+    padding: 0px 0px 70px 0px;
+    color: var(--glossWhite);
+    text-align: center;
+}
+
+.loginPage_icons {
+    color: var(--brickRed);
+}
+
+.loginPage_inputFields {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--brickRed);
+    color: var(--brickRed);
+}
+
+.loginPage_loginBox input {
+    margin-top: 40px;
+}
+
+.loginPage_logo {
+    width: 140px;
+    height: 40px;
+}
+
+.loginPage_forgotPsswdLink a {
+    color: var(--brickRed);
+    text-decoration: underline;
+}
+
+.loginPage_forgotPsswdLink {
+    margin-top: 70px;
 }
 
 
