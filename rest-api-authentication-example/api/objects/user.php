@@ -131,4 +131,16 @@ function updateSettings(){
   return false;
 }
 
+// deletes account from DB. 
+function deleteAccount(){
+  $query = "DELETE FROM " . $this->table_name . "
+          WHERE
+              id = :id";
+
+  if($stmt->execute()){
+      return true;
+  }
+  return false;
+}
+
 }
