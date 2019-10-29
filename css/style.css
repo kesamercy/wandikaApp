@@ -1,14 +1,14 @@
 :root {
     --brickRed: #962715;
-    --blueBlack: #021c1e;
-    --cadetBlue: #004445;
-    --rain: #2c7873;
+    --glossWhite: #ffffff;
+    --matteBlack: #1e1e20;
+    --mediumGray: #bbc3c6;
 }
 
 body {
     color: white;
     font-family: Times, Times New Roman, Georgia, serif;
-    ;
+    background: gray;
 }
 
 .navBar li {
@@ -42,25 +42,11 @@ body {
     padding-top: 20px;
 }
 
-.aboutText {
-    width: 60%;
-    font-family: 'Roboto Mono';
-    text-align: center;
-}
-
 .pageTitle {}
 
 .slogan {}
 
-.loginBox {
-    background: white;
-    width: 300px;
-    border-radius: 6px;
-    margin: 180px auto 0 600px;
-    padding: 0px 0px 70px 0px;
-    color: black;
-    position: absolute;
-}
+.loginBox {}
 
 .email {
     background: #ecf0f1;
@@ -68,7 +54,7 @@ body {
     border-bottom: #ccc 2px solid;
     padding: 8px;
     width: 250px;
-    color: #AAAAAA;
+    color: #aaaaaa;
     margin-top: 10px;
     font-size: 1em;
     border-radius: 4px;
@@ -121,6 +107,95 @@ body {
 .fa-check{
   width: 30px;
   color: green;
+}
+
+
+/* about page styling */
+
+.aboutPage_container {
+    background: rgb(187, 195, 198);
+    background: linear-gradient( 90deg, rgba(187, 195, 198, 1) 4%, rgba(251, 251, 251, 1) 24%, rgba(251, 251, 251, 1) 74%, rgba(187, 195, 198, 1) 96%);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    color: var(--matteBlack);
+}
+
+.aboutPage_casetteImage {
+    width: 150px;
+    float: right;
+    margin-right: 150px;
+    margin-top: 150px;
+}
+
+.aboutPage_typeWritter {
+    width: 300px;
+    float: right;
+    margin-top: 250px;
+}
+
+.aboutPage_aboutTitle {
+    font-weight: bold;
+}
+
+.aboutPage_aboutText {
+    font-family: "Roboto Mono";
+    text-align: left;
+    margin-left: 400px;
+    margin-top: 200px;
+    letter-spacing: 2px;
+}
+
+.aboutPage_aboutDescription {
+    width: 450px;
+}
+
+.aboutPage_footerWord {
+    margin-top: 80px;
+    margin-left: 70px;
+}
+
+
+/* styling for the login modal */
+
+.loginPage_loginBox {
+    background: var(--glossWhite);
+    width: 300px;
+    height: 60vh;
+    border-radius: 6px;
+    margin: 180px auto 0 600px;
+    padding: 0px 0px 70px 0px;
+    color: var(--glossWhite);
+    text-align: center;
+}
+
+.loginPage_icons {
+    color: var(--brickRed);
+}
+
+.loginPage_inputFields {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--brickRed);
+    color: var(--brickRed);
+}
+
+.loginPage_loginBox input {
+    margin-top: 40px;
+}
+
+.loginPage_logo {
+    width: 140px;
+    height: 40px;
+}
+
+.loginPage_forgotPsswdLink a {
+    color: var(--brickRed);
+    text-decoration: underline;
+}
+
+.loginPage_forgotPsswdLink {
+    margin-top: 70px;
 }
 
 
@@ -177,7 +252,7 @@ body {
 /* this code is responsible for the slide show text.. */
 
 .cb-slideshow li div h1 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-family: "BebasNeueRegular", "Arial Narrow", Arial, sans-serif;
     font-size: 100px;
     float: right;
     padding-right: 50px;
@@ -186,7 +261,7 @@ body {
 }
 
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(../images/1.jpg)
+    background-image: url(../images/1.jpg);
 }
 
 .cb-slideshow li:nth-child(2) span {
@@ -296,7 +371,7 @@ body {
         -webkit-transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -319,7 +394,7 @@ body {
         -moz-transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -342,7 +417,7 @@ body {
         -o-transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -365,7 +440,7 @@ body {
         -ms-transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -388,7 +463,7 @@ body {
         transform: scale(1.1);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
@@ -409,14 +484,14 @@ body {
         -webkit-transform: scale(0.5);
     }
     19% {
-        opacity: 0
+        opacity: 0;
     }
     25% {
         opacity: 0;
         -webkit-transform: scale(5);
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
