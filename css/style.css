@@ -6,9 +6,12 @@
 }
 
 body {
-    color: white;
-    font-family: Times, Times New Roman, Georgia, serif;
-    background: gray;
+    color: var(--matteBlack);
+    height: 100%;
+    font-family: "Fira Mono", monospace;
+    /* font-family: "Cousine", monospace; */
+    /* font-family: "Share", cursive; */
+    /* font-family: "Roboto Slab", serif; */
 }
 
 .navBar li {
@@ -23,6 +26,8 @@ body {
 
 .menuElements {
     float: right;
+    margin: 40px;
+    font-family: "Fira Mono", monospace;
 }
 
 .logoBox {
@@ -160,6 +165,72 @@ body {
 
 .loginPage_forgotPsswdLink {
     margin-top: 70px;
+}
+
+.communityPage_container {
+    height: 100vh;
+    color: var(--glossWhite);
+    font-family: "Fira Mono", monospace;
+}
+
+.communityPage_title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 300px;
+    color: var(--brickRed);
+    font-weight: bold;
+}
+
+.communityPage_audioPost {
+    width: 35%;
+    height: 150px;
+    background-color: var(--brickRed);
+    display: block;
+    margin-top: 40px;
+    float: right;
+    margin-right: 560px;
+    border-radius: 10px;
+}
+
+.communityPage_audioPost audio {
+    text-align: center;
+}
+
+.communityPage_postUsername {
+    float: left;
+}
+
+.communityPage_timePosted {
+    float: left;
+    font-size: 10px;
+    margin-top: 70px;
+    margin-left: 5px;
+}
+
+.communityPage_blogPost {
+    height: 350px;
+    width: 35%;
+    border-radius: 10px;
+    background-color: var(--glossWhite);
+    color: var(--matteBlack);
+    float: right;
+    margin-top: 50px;
+    margin-right: 560px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.communityPage_postElements {
+    align-content: left;
+}
+
+.communityPage_postImage {
+    float: right;
+    width: 60px;
+}
+
+hr {
+    color: var(--mediumGray);
+    width: 50%;
 }
 
 
