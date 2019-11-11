@@ -6,7 +6,7 @@
 }
 
 body {
-    color: var(--matteBlack);
+    color: var(--glossWhite);
     height: 100%;
     font-family: "Fira Mono", monospace;
     /* font-family: "Cousine", monospace; */
@@ -283,11 +283,11 @@ body {
     width: 190px;
     height: 190px;
     position: relative;
-    top: -465px;
+    top: -485px;
     left: 650px;
 }
 
-.profilePage_createContent {
+.profilePage_pastContent {
     background-color: var(--glossWhite);
     color: var(--matteBlack);
     height: 370px;
@@ -297,7 +297,7 @@ body {
     margin-left: 180px;
 }
 
-.profilePage_pastContent {
+.profilePage_createContent {
     background-color: var(--glossWhite);
     color: var(--matteBlack);
     height: 370px;
@@ -306,6 +306,25 @@ body {
     bottom: 790px;
     margin-right: 250px;
     float: right;
+}
+
+.profilePage_archivedPosts li {
+    display: inline;
+    margin-left: 200px;
+    position: relative;
+    bottom: 290px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.profilePage_archivedPosts a:hover {
+    text-decoration: none;
+}
+
+.profilePage_inputField textarea {
+    border-color: var(--brickRed);
+    margin: 15px;
+    align-content: left;
 }
 
 

@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Cousine|Fira+Mono|Roboto+Slab|Share&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Profile</title>
 </head>
 
@@ -44,17 +45,33 @@
             <h1>story</h1>
             <p>Time</p>
         </div>
-
-        <img class="profilePage_clock" src="images\profilecassette.png" alt="logo">
-        <div class="profilePage_createContent">
-
-            <p>this is the contianer for the input of the posts</p>
-
+        <div class="profilePage_archivedPosts">
+            <ul>
+                <li> <a href=""> Past Posts</a></li>
+                <li> <a href=""> Saved Posts</a> </li>
+            </ul>
         </div>
+
+        <img class="profilePage_clock" src="images\profilecassette.png" alt="clock">
+
+
 
         <div class="profilePage_pastContent">
 
             <p>home for past and saved content</p>
+
+        </div>
+
+        <div class="profilePage_createContent">
+
+            <p>this is the contianer for the input of the posts</p>
+            <i class="fa fa-user-circle-o profilePage_userProfileIcon" style="font-size:36px"></i>
+
+            <div class="profilePage_inputField">
+                <textarea name="" id="" cols="55" rows="5">
+                    Start Typing here or Upload your story
+                </textarea>
+            </div>
 
         </div>
     </div>
