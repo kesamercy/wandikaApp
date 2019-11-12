@@ -248,9 +248,10 @@ body {
     font-weight: bold;
     font-family: "Fira Mono", monospace;
     float: right;
-    margin-right: 170px;
+    margin-right: 130px;
     position: relative;
-    bottom: 165px;
+    bottom: 180px;
+    font-size: 30px;
 }
 
 .profilePage_title h1 {
