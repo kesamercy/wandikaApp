@@ -290,6 +290,16 @@ body {
   padding: 10px;
 }
 
+#profile-submit {
+  background-color: #6495ED;
+  width: 120px;
+  float: right;
+  padding-top: 5px;
+  margin-top: 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
 
 .profilePage_archivedPosts li {
     display: inline;
@@ -329,7 +339,7 @@ body {
 }
 .profile-create h3{
   padding-bottom: 10px;
-  padding-top: -5px;
+  text-decoration: underline;
 }
 
 .post-form textarea{
