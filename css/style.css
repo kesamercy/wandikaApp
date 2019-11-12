@@ -238,7 +238,7 @@ body {
 
 .profilePage_container {
     background-color: var(--brickRed);
-    height: 100vh;
+    height: 150vh;
     color: white;
     font-family: "Fira Mono", monospace;
 }
@@ -248,9 +248,9 @@ body {
     font-weight: bold;
     font-family: "Fira Mono", monospace;
     float: right;
-    margin-right: 290px;
+    margin-right: 170px;
     position: relative;
-    bottom: 290px;
+    bottom: 165px;
 }
 
 .profilePage_title h1 {
@@ -259,18 +259,10 @@ body {
     opacity: 0.1;
     text-align: center;
     position: relative;
-    top: -150px;
+    top: -90px;
     text-transform: uppercase;
 }
 
-.profilePage_userDetails h2 {
-    text-transform: uppercase;
-    font-family: "Fira Mono", monospace;
-    margin-left: 40px;
-    position: relative;
-    top: 160px;
-    font-weight: bold;
-}
 
 .profilePage_userDetails p {
     font-size: 15px;
@@ -281,9 +273,9 @@ body {
 
 .profilePage_clock {
     width: 190px;
-    height: 190px;
+    height: 200px;
     position: relative;
-    top: -485px;
+    top: -400px;
     left: 650px;
 }
 
@@ -326,6 +318,16 @@ body {
     margin: 15px;
     align-content: left;
 }
+
+.profile-tab {
+ position: absolute;
+ left: 150px;
+ width: 450px;
+ height: 400px;
+ top: 450px;
+ border: 3px solid green;
+}
+
 
 
 /* begining of the code that controls the slide show images */
@@ -730,7 +732,7 @@ body {
 /* Show at least something when animations not supported */
 
 
-/* 
+/*
 .no-cssanimations .cb-slideshow li span {
     opacity: 1;
 }

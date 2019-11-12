@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Cousine|Fira+Mono|Roboto+Slab|Share&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Profile</title>
 </head>
 
@@ -34,47 +39,35 @@
                     <!-- have a search bar here  -->
                 </div>
             </ul>
-
         </div>
 
-        <div class="profilePage_userDetails">
-            <h2>Mercy Nekesa</h2>
-            <p id="cityCountry">kampala,Uganda</p>
-        </div>
         <div class="profilePage_title">
             <h1>story</h1>
             <p>Time</p>
         </div>
-        <div class="profilePage_archivedPosts">
-            <ul>
-                <li> <a href=""> Past Posts</a></li>
-                <li> <a href=""> Saved Posts</a> </li>
-            </ul>
-        </div>
 
         <img class="profilePage_clock" src="images\profilecassette.png" alt="clock">
 
+        <div  class="profile-tab">
+          <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#past-posts">Past Posts</a></li>
+              <li><a data-toggle="tab" href="#saved-posts">Saved Posts</a></li>
+          </ul>
 
-
-        <div class="profilePage_pastContent">
-
-            <p>home for past and saved content</p>
-
-        </div>
-
-        <div class="profilePage_createContent">
-
-            <p>this is the contianer for the input of the posts</p>
-            <i class="fa fa-user-circle-o profilePage_userProfileIcon" style="font-size:36px"></i>
-
-            <div class="profilePage_inputField">
-                <textarea name="" id="" cols="55" rows="5">
-                    Start Typing here or Upload your story
-                </textarea>
+          <div class="tab-content">
+            <div id="past-posts" class="tab-pane fade in active">
+                <h3>Past posts</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-
+            <div id="saved-posts" class="tab-pane fade">
+                <h3>Saved Posts</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
         </div>
+
     </div>
+
 </body>
 
 </html>
