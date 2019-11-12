@@ -263,14 +263,6 @@ body {
     text-transform: uppercase;
 }
 
-
-.profilePage_userDetails p {
-    font-size: 15px;
-    margin-left: 190px;
-    position: relative;
-    top: 150px;
-}
-
 .profilePage_clock {
     width: 190px;
     height: 200px;
@@ -279,26 +271,24 @@ body {
     left: 530px;
 }
 
-.profilePage_pastContent {
-    background-color: var(--glossWhite);
-    color: var(--matteBlack);
-    height: 370px;
-    width: 550px;
-    position: relative;
-    bottom: 420px;
-    margin-left: 180px;
+#past-posts-id {
+  width: 450px;
+  height: 190px;
+  overflow-y: scroll;
+  padding-top: 5px;
+  border-style: groove;
+  padding: 10px;
 }
 
-.profilePage_createContent {
-    background-color: var(--glossWhite);
-    color: var(--matteBlack);
-    height: 370px;
-    width: 530px;
-    position: relative;
-    bottom: 790px;
-    margin-right: 250px;
-    float: right;
+#saved-posts-id {
+  width: 450px;
+  height: 190px;
+  overflow-y: scroll;
+  padding-top: 5px;
+  border-style: groove;
+  padding: 10px;
 }
+
 
 .profilePage_archivedPosts li {
     display: inline;
@@ -344,7 +334,7 @@ body {
 .post-form textarea{
   color: black;
   resize: none;
-  padding: 5px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
