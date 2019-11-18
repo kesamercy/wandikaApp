@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Wandika</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wandika - My Profile</title>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
@@ -13,14 +14,12 @@
     <link href="https://fonts.googleapis.com/css?family=Cousine|Fira+Mono|Roboto+Slab|Share&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Profile</title>
 </head>
 
-<body>
+<body class="profile">
     <div class="profilePage_container">
         <div class="navBar">
             <ul>
@@ -48,6 +47,18 @@
 
         <img class="profilePage_clock" src="images\profilecassette.png" alt="clock">
 
+        <div class="main-content">
+        <div class="profile-create">
+             <h3> Create new post </h3>
+
+             <div class="post-form">
+                <form action="#" name="createPostForm" method="post">
+                    <textarea id="createPostText" placeholder="Start typing..." class="text" cols="53" rows ="10" name="createPostText"></textarea>
+                    <input type="submit" value="Create Post" name="profile-submit" id="profile-submit" class="submitButton">
+                </form>
+             </div>
+        </div>
+
         <div class="profile-tab">
           <ul class="nav nav-tabs">
               <li class="active"><a data-toggle="tab" href="#past-posts">Past Posts</a></li>
@@ -69,17 +80,9 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="profile-create">
-             <h3> Create new post </h3>
 
-             <div class="post-form">
-                <form action="#" name="createPostForm" method="post">
-                    <textarea id="createPostText" placeholder="Start typing..." class="text" cols="53" rows ="10" name="createPostText"></textarea>
-                    <input type="submit" value="Create Post" name="profile-submit" id="profile-submit" class="submitButton">
-                </form>
-             </div>
-        </div>
 
     </div>
 
