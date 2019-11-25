@@ -9,34 +9,44 @@ body {
     color: var(--glossWhite);
     height: 100%;
     font-family: "Fira Mono", monospace;
-    /* font-family: "Cousine", monospace; */
-    /* font-family: "Share", cursive; */
-    /* font-family: "Roboto Slab", serif; */
-}
-
-.navBar li {
-    display: inline;
-    padding-left: 40px;
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    text-transform: lowercase;
-}
-
-.menuElements {
-    float: right;
-    margin: 40px;
+    background-color: var(--brickRed);
     font-family: "Fira Mono", monospace;
 }
 
-.logoBox {
-    float: left;
+.menuItems {
+    float: right;
+    padding-top: 30px;
+}
+
+.logoImage {}
+
+.menuItems li {
+    display: inline;
+    padding: 20px;
+    font-family: "Fira Mono", monospace;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.pageTitle h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 100px;
+    opacity: 0.1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 100px;
 }
 
 .logo {
     width: 150px;
     height: 40px;
+    margin: 20px;
+}
+
+.welcomePage_header {
+    background-color: var(--brickRed);
+    width: 100%;
 }
 
 .pageDescription {
@@ -46,8 +56,6 @@ body {
 .pageDescription li {
     padding-top: 20px;
 }
-
-.pageTitle {}
 
 .slogan {}
 
@@ -81,47 +89,47 @@ body {
 
 /* about page styling */
 
-.aboutPage_container {
+.aboutPage_content {
     background: rgb(187, 195, 198);
     background: linear-gradient( 90deg, rgba(187, 195, 198, 1) 4%, rgba(251, 251, 251, 1) 24%, rgba(251, 251, 251, 1) 74%, rgba(187, 195, 198, 1) 96%);
-    height: 100vh;
+    height: 65vh;
     width: 100%;
     margin: 0;
     color: var(--matteBlack);
 }
 
-.aboutPage_casetteImage {
-    width: 150px;
-    float: right;
-    margin-right: 150px;
-    margin-top: 150px;
-}
-
-.aboutPage_typeWritter {
-    width: 300px;
-    float: right;
-    margin-top: 250px;
-}
-
-.aboutPage_aboutTitle {
-    font-weight: bold;
-}
-
 .aboutPage_aboutText {
     font-family: "Roboto Mono";
     text-align: left;
-    margin-left: 400px;
-    margin-top: 200px;
+    margin-left: 300px;
     letter-spacing: 2px;
+    padding-top: 50px;
+    float: left;
 }
 
 .aboutPage_aboutDescription {
     width: 450px;
 }
 
-.aboutPage_footerWord {
+.aboutPage_aboutTitle {
+    font-weight: bold;
+}
+
+.aboutPage_casetteImage {
+    width: 150px;
+    float: right;
+}
+
+.aboutPage_typeWritter {
+    width: 300px;
     margin-top: 80px;
-    margin-left: 70px;
+    float: left;
+}
+
+.aboutPage_Images {
+    float: right;
+    margin-right: 250px;
+    margin-top: 50px;
 }
 
 
@@ -251,16 +259,6 @@ body {
     margin-right: 290px;
     position: relative;
     bottom: 290px;
-}
-
-.profilePage_title h1 {
-    font-family: "Roboto Slab", serif;
-    font-size: 304px;
-    opacity: 0.1;
-    text-align: center;
-    position: relative;
-    top: -150px;
-    text-transform: uppercase;
 }
 
 .profilePage_userDetails h2 {
