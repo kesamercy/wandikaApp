@@ -27,6 +27,7 @@ body {
     font-size: 18px;
     font-weight: 500;
     text-transform: lowercase;
+    cursor: pointer;
 }
 
 .pageTitle h1 {
@@ -44,9 +45,38 @@ body {
     margin: 20px;
 }
 
+.welcomePage_mainContainer {
+    /* font-family: "Fira Mono", monospace; */
+}
+
+.welcomePage_content {
+    float: left;
+    margin-left: 60px;
+    text-align: left;
+}
+
+.big_title h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 80px;
+    color: var(--brickRed);
+    width: 50%;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.small_text p {
+    font-family: "Roboto Condensed", sans-serif;
+    width: 50%;
+    font-size: 20px;
+}
+
 .welcomePage_header {
     background-color: var(--brickRed);
     width: 100%;
+}
+
+.welcomePageLogo {
+    margin-right: 700px;
 }
 
 .pageDescription {
