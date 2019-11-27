@@ -245,24 +245,13 @@ body {
     font-family: "Fira Mono", monospace;
 }
 
-.profilePage_title p {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: "Fira Mono", monospace;
-    float: right;
-    margin-right: 130px;
-    position: relative;
-    bottom: 180px;
-    font-size: 30px;
-}
-
 .profilePage_title h1 {
     font-family: "Roboto Slab", serif;
-    font-size: 304px;
-    opacity: 0.1;
+    font-size: 120px;
+    opacity: 0.3;
     text-align: center;
     position: relative;
-    top: -90px;
+    top: 20px;
     text-transform: uppercase;
 }
 
@@ -392,15 +381,13 @@ body {
 
 /*for the settings */
 .settings-container {
-  background-color: var(--brickRed);
-  height: 99vh;
   color: white;
   font-family: "Fira Mono", monospace;
 }
 
 .settings_title h1 {
-    font-family: "Fira Mono", monospace;
-    font-weight: bold;
+    /*font-family: "Fira Mono", monospace;*/
+    font-family: "Roboto Slab", serif;
     font-size: 120px;
     opacity: 0.3;
     text-align: center;
@@ -436,6 +423,10 @@ body {
 .settings-form input{
   width: 200px;
   /*padding-top: 8px;*/
+}
+
+.sett-fname, .sett-lname, .sett-email, .sett-location{
+  margin-bottom: 15px;
 }
 
 
