@@ -19,7 +19,7 @@
 
         <div class="menuItems">
             <ul>
-                <li><a href="community.html" id="community"> Community </a></li>
+                <li><a href="javascript:loadPage('/wandika/community.html')"> Community </a></li>
                 <li><a id="signUp">Profile</a></li>
                 <li><a id="settings">Settings</a></li>
                 <li><a id="aboutPage">About</a></li>
@@ -34,33 +34,39 @@
         </div>
     </div>
 
+    <div id="pageDetails">
 
-    <div class="pageTitle">
-        <h1>about</h1>
-    </div>
+        <div class="pageTitle ">
+            <h1 class="aboutPage_title">about</h1>
+        </div>
 
-    <div class="aboutPage_content">
-        <div class="aboutPage_aboutText">
-            <h1 class="aboutPage_aboutTitle">Let's tell stories together. <br> Where we shall we start?</h1>
-            <br><br>
-            <p class="aboutPage_aboutDescription">See that type writter and cassette right there? Right now they are just objects. You are the creator. You can write your story or record your story. Tell us about your journey. We wnat to learn from your experiences. We want to know your story.
-            </p>
+        <div class="aboutPage_content">
+            <div class="aboutPage_aboutText">
+                <h1 class="aboutPage_aboutTitle">Let's tell stories together. <br> Where we shall we start?</h1>
+                <br><br>
+                <p class="aboutPage_aboutDescription">See that type writter and cassette right there? Right now they are just objects. You are the creator. You can write your story or record your story. Tell us about your journey. We wnat to learn from your experiences. We want to know your
+                    story.
+                </p>
+
+            </div>
+
+            <div class="aboutPage_Images">
+                <img class="aboutPage_casetteImage" src="images\casettegif.gif" alt="logo">
+                <img class="aboutPage_typeWritter" src="images\typewritter.png" alt="logo">
+
+            </div>
 
         </div>
 
-        <div class="aboutPage_Images">
-            <img class="aboutPage_casetteImage" src="images\casettegif.gif" alt="logo">
-            <img class="aboutPage_typeWritter" src="images\typewritter.png" alt="logo">
-
-        </div>
-
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
         $(document).ready(function() {
-            $("button").click(function() {
-                $("#div1").load("demo_test.txt");
-            });
+
+
+
         });
     </script>
 

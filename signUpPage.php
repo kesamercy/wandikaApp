@@ -13,24 +13,31 @@
     </head>
 
     <body>
-        <form action="">
-            <div class="loginBox">
-                <br> Sign Up here <br><br>
-                <input type="text" name="firstName" value="First Name">
-                <input type="text" name="middleName" value="Middle Name">
-                <input type="text" name="lastName" value="Last Name">
-                <input type="email" name="email" value="Email">
-                <input type="password" name="password" value="Password">
-                <input type="password" name="confirmPasssword" value="Confirm Password">
-                <input type="date" name="dob" value="Date of Birth">
-                <input type="text" name="city" value="City">
-                <input type="text" name="country" value="Country">
 
-                <input type="submit" value="submit" class="submitButton">
+        <form action="">
+            <div class="signUp_container">
+                <br> <br> <img class="loginPage_logo" src="images\logo-wandika-word.png" alt="logo"><br> <br>
+                <i class="fa fa-envelope icon loginPage_icons"></i>
+                <input class="loginPage_inputFields" type="firstname" name="firstname" value="firstname">
+                <input class="loginPage_inputFields" type="lastname" name="lastname" value="lastname">
+                <!-- <input class="loginPage_inputFields" type="middlename" name="middlename" value="middlename"> -->
+                <input class="loginPage_inputFields" type="email" name="email" value="email">
+                <input class="loginPage_inputFields" type="password" name="password" value="Password">
+                <input class="loginPage_inputFields" type="confirmpassword" name="confirmpassword"
+                    value="confirmpassword">
+
+
+                <input class="loginPage_inputFields" type="date" name="date" value="date">
+                <input class="loginPage_inputFields" type="city" name="city" value="city">
+                <input class="loginPage_inputFields" type="country" name="country" value="country">
+
+
+
+                <input type="button" value="Sign Up" class="submitButton">
+
             </div>
 
         </form>
-
     </body>
 
 </html>

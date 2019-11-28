@@ -16,71 +16,90 @@
 </head>
 
 <body>
-    <div class="navBar">
-        <ul>
-            <div class="logoBox">
-                <li>
-                    <img class="logo" src="images\logo-wandika-word.png" alt="logo">
-                </li>
-            </div>
 
-            <div class="menuElements">
-                <li class="communityPage_title">Community</li>
-                <li><a id="login">Logout</a></li>
-                <li><a id="signUp">Profile</a></li>
-                <li><a href="contact.asp">Settings</a></li>
-                <li><a id="aboutPage">About</a></li>
-                <!-- have a search bar here  -->
-            </div>
-        </ul>
-
+    <div class="pageTitle ">
+        <h1 communityPage_title>community</h1>
     </div>
-    <div class="communityPage_container">
 
-        <div class="communityPage_postElements">
+    <div class="communityPage_content">
 
-            <div class="communtityPage_postUpload">
-                this is where the posts are uploaded
+        <div class="communityPage_createPost">
+            <textarea name="create post" id="" cols="50" rows="5">Start typing your post here...</textarea>
+            <div class="image-upload">
+                <label for="file-input"> 
+                        <img src="https://goo.gl/pB9rpQ"/>
+                        upload audio
+                    </label>
 
-                <!-- need a feature for the blog post -->
-                <!-- need a feature for the audio upload -->
+                <input id="file-input" type="file" />
+            </div>
 
+            <button class="communityPage_postButton">Post Content</button>
+        </div>
+
+        <div class="communityPage_blogPostContainer">
+            <i class="fa fa-user-circle-o communityPage_userProfileIcon" style="font-size:36px"></i>
+            <p class="communityPage_postUsername">Username</p>
+
+            <div class="communityPage_blogTitle">
+                <h1>Stay Away From CS</h1>
             </div>
 
 
-            <div class="communityPage_audioPost">
-                <i class="fa fa-user-circle-o communityPage_userProfileIcon" style="font-size:36px"></i>
-                <p class="communityPage_postUsername">Username</p>
-                <img class="communityPage_postImage" src="images\casettegif.gif" alt="aduio">
-                <h3>Audio Title</h3>
-                <audio controls>
-                        <source src="horse.ogg" type="audio/ogg">
-                        <source src="horse.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                </audio>
-                <p class="communityPage_timePosted">Posted <time datetime="2015-09-12" title="September 12">3 minutes ago</time></p>
+            <div class="communityPage_blogContent">
 
+                <p>If you wish for sanity in your life, that is.. this is dummy text meant to fill space Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+
+                </p>
 
             </div>
 
-            <div class="communityPage_blogPost">
-                <p class="communityPage_postUsername">Username</p>
-                <img class="communityPage_postImage" src="images\typewritter.png" alt="typewritter">
-                <h3>Blog Title</h3>
-                <article>
-                    Computer science makes me feel like the only life I have is computer science.
-                </article>
+            <p class="communityPage_timePosted">Posted <time datetime="2015-09-12" title="September 12">3 minutes ago</time></p>
 
-                <p class="communityPage_timePosted">Posted <time datetime="2015-09-12" title="September 12">3 minutes ago</time></p>
+            <div class="savepost">
 
             </div>
 
         </div>
 
+        <!-- i will replicate the code for the blog post and only change a few things... in the future, the names should change to be generic -->
+
+        <!-- <div class="communityPage_audioPost"> -->
+
+
+        <div class="communityPage_audioPost">
+            <i class="fa fa-user-circle-o communityPage_userProfileIcon" style="font-size:36px"></i>
+            <p class="communityPage_postUsername">Username</p>
+
+            <div class="communityPage_blogTitle">
+                <h1>Listen to me, stay Away From CS</h1>
+            </div>
+
+
+            <div class="communityPage_blogContent">
+
+                <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+
+            </div>
+
+            <p class="communityPageAudioPost_timePosted">Posted <time datetime="2015-09-12" title="September 12">3 minutes ago</time></p>
+
+            <div class="savepost">
+
+            </div>
+
+        </div>
+
+        <!-- </div> -->
+
 
 
     </div>
-
 
 
 
