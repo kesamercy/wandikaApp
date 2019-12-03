@@ -251,16 +251,8 @@ body {
     opacity: 0.3;
     text-align: center;
     position: relative;
-    top: 20px;
+    top: 10px;
     text-transform: uppercase;
-}
-
-.profilePage_clock {
-    width: 190px;
-    height: 170px;
-    position: relative;
-    top: -344px;
-    left: 530px;
 }
 
 /* for the bio */
@@ -269,6 +261,7 @@ body {
   right: 780px;
   width: 300px;
   height: 400px;
+  top: 50px;
   /*border: 3px solid green;*/
 }
 
@@ -306,7 +299,7 @@ body {
   /*float: right;*/
   width: 550px;
   height: 400px;
-  top: 450px;
+  top: 350px;
   /*border: 3px solid green;*/
 }
 
