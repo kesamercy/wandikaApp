@@ -392,7 +392,7 @@ body {
 
 .settingsDescription {
   position: absolute;
-  top: 280px;
+  top: 270px;
   left: 520px;
   right: 400px;
   width: 300px;
@@ -408,18 +408,25 @@ body {
 }
 
 .settings-form label{
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 10px;
   padding-top: 50px;
   margin-top: 50px;
 }
 .settings-form input{
   width: 200px;
-  /*padding-top: 8px;*/
+  color: black;
+  padding-left: 6px;
 }
 
 .sett-fname, .sett-lname, .sett-email, .sett-location{
-  margin-bottom: 15px;
+  margin-bottom: 12.5px;
+}
+
+.set-icons{
+  position: absolute;
+  right: 140px;
+  top: 272px;
 }
 
 
