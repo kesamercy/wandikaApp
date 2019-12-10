@@ -14,7 +14,7 @@ body {
 
 .menuItems {
     float: right;
-    padding-top: 30px;
+    padding-top: -10px;
 }
 
 .logoImage {}
@@ -355,17 +355,16 @@ label {
     margin-left: -50px;
 }
 
+/*For the profile page */
 
 .profilePage{
   background-color: var(--brickRed);
 }
 
-
 .profilePage_container {
     color: white;
     font-family: "Fira Mono", monospace;
 }
-
 
 .profilePage_title h1 {
     font-family: "Roboto Slab", serif;
@@ -373,7 +372,7 @@ label {
     opacity: 0.3;
     text-align: center;
     position: relative;
-    top: 60px;
+    top: 50px;
     left: 270px;
     text-transform: uppercase;
 }
@@ -515,14 +514,19 @@ label {
 
 .profilePage-submit{
   background-color: #778899;
-  width: 80px;
+  width: 110px;
   float: right;
   padding-top: 5px;
   margin-top: 15px;
-  right: 200px;
+  margin-right: -100px;
   border-radius: 8px;
   display: inline-block;
   color: white;
+  cursor: pointer;
+}
+
+.profilePage-submit:hover {
+  opacity: 0.7;
 }
 
 /*for the settings */
@@ -538,7 +542,7 @@ label {
     opacity: 0.3;
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 20px;
     left: 130px;
     text-transform: uppercase;
 }
