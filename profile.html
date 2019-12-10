@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="profile">
+<body class="profilePage">
     <div class="profilePage_container">
       <header>
         <div class="navBar">
@@ -50,45 +50,45 @@
 
         <div class="main-content">
 
-          <div class="profile-bio">
-            <div class="bio-card">
+          <div class="profilePage-bio">
+            <div class="profilePage-bio-card">
                 <img src="img.jpg" alt="John" style="width:100%">
                 <h1>John Doe</h1>
-                <p class="bio-username">johndoeisamazing</p>
-                <p class="bio-location">Blah city, United States of Blah</p>
-                <p><button class="bio-button">Follow</button></p>
+                <p class="profilePage-bio-username">johndoeisamazing</p>
+                <p class="profilePage-bio-location">Blah city, United States of Blah</p>
+                <p><button class="profilePage-bio-button">Follow</button></p>
             </div>
           </div>
 
-          <div class = "profile-content">
-            <div class="profile-create">
+          <div class = "profilePage-content">
+            <div class="profilePage-create">
               <h3> Create new post </h3>
 
-                <div class="post-form">
+                <div class="profilePage-post-form">
                     <form action="#" name="createPostForm" method="post">
                         <textarea id="createPostText" placeholder="Start typing..." class="text" cols="53" rows ="10" name="createPostText"></textarea>
-                        <input type="submit" value="Create Post" name="profile-submit" id="profile-submit" class="submitButton">
+                        <input type="submit" value="Create Post" name="profilePage-submit" id="profilePage-submit" class="submitButton">
                     </form>
                 </div>
             </div>
 
-            <div class="profile-tab">
-                  <div class="profile-tabs">
+            <div class="profilePage-profile-tab">
+                  <div class="profilePage-tabs">
                       <button class="tablinks" onclick="openTab(event, 'saved-posts')" id="defaultOpen">Saved Posts</button>
-                      <div class="vl"></div>
+                      <div class="profilePage-vl"></div>
                       <button class="tablinks" onclick="openTab(event, 'past-posts')">Past Posts</button>
                   </div>
 
-                  <div id="saved-posts" class="profile-tabcontent">
+                  <div id="saved-posts" class="profilePage-tabcontent">
                       <h3>Saved Posts</h3>
-                      <div class="profile-posts-style">
+                      <div class="profilePage-posts-style">
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.jkenrfbgebqgjhbwgbbb fn de grw nkjer jrejkgre jregk;af hfke kegr vkebe nvken hkjen e eregk jkgrhgre jkeh e ek jjer jhrgre ehejrner hwfkfwkfb fbwbfr rf kbf fi kbfr bf n jrbfjrfr fbj jbf rbfrk kbfjr nr nrfn r hrbgre jrnereb n fkrbfr frbgkre fn nbklebf wnvje jrevew vrn hre ejvhre kr krv e</p>
                       </div>
                   </div>
 
-                  <div id="past-posts" class="profile-tabcontent">
+                  <div id="past-posts" class="profilePage-tabcontent">
                       <h3>Past Posts</h3>
-                      <div class="profile-posts-style">
+                      <div class="profilePage-posts-style">
                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. labore et dolore magna aliqua.jkenrfbgebqgjhbwgbbb fn de grw nkjer jrejkgre jregk;af hfke kegr vkebe nvken hkjen e eregk jkgrhgre jkeh e ek jjer jhrgre ehejrner hwfkfwkfb fbwbfr rf kbf fi kbfr bf n jrbfjrfr fbj jbf rbfrk kbfjr nr nrfn r hrbgre jrnereb n fkrbfr frbgkre fn nbklebf wnvje jrevew vrn hre ejvhre kr krv e</p>
                       </div>
                   </div>
@@ -100,7 +100,7 @@
     <script>
       function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("profile-tabcontent");
+        tabcontent = document.getElementsByClassName("profilePage-tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.display = "none";
         }

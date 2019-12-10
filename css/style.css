@@ -236,7 +236,7 @@ body {
     margin-left: -50px;
 }
 
-.profile{
+.profilePage{
   background-color: var(--brickRed);
 }
 
@@ -257,7 +257,7 @@ body {
 }
 
 /* for the bio */
-.profile-bio{
+.profilePage-bio{
   position: absolute;
   right: 780px;
   width: 300px;
@@ -266,18 +266,18 @@ body {
   /*border: 3px solid green;*/
 }
 
-.bio-card{
+.profilePage-bio-card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
   text-align: center;
   background-color: #9c2626;
 }
-.bio-username {
+.profilePage-bio-username {
   color: grey;
   font-size: 18px;
 }
-.bio-button {
+.profilePage-bio-button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -289,7 +289,7 @@ body {
   width: 100%;
   font-size: 18px;
 }
-.bio-button:hover {
+.profilePage-bio-button:hover {
   opacity: 0.7;
 }
 
@@ -304,7 +304,7 @@ body {
   /*border: 3px solid green;*/
 }
 
-.profile-content {
+.profilePage-content {
   position: absolute;
   left: -70px;
   width: 700px;
@@ -312,7 +312,7 @@ body {
   /*border: 3px solid yellow;*/
 }
 
-.profile-create{
+.profilePage-create{
   position: absolute;
   /*right: 150px;*/
   width: 500px;
@@ -320,8 +320,12 @@ body {
   top: -20px;
   /*border: 3px solid red;*/
 }
+.profilePage-create h3{
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
 
-.profile-tab {
+.profilePage-profile-tab {
  position: absolute;
  width: 600px;
  height: 400px;
@@ -329,7 +333,7 @@ body {
  /*border: 3px solid red;*/
 }
 
-.vl {
+.profilePage-vl {
   border-left: 1px solid white;
   height: 40px;
   position: absolute;
@@ -338,7 +342,7 @@ body {
   top: 0;
 }
 
-.profile-tabs button{
+.profilePage-tabs button{
   border: none;
   border-radius: 5px;
   color: white;
@@ -352,21 +356,21 @@ body {
   float: left;
 }
 
-.profile-tabs button:hover {
+.profilePage-tabs button:hover {
   background-color: #dc9c9c;
 }
 
-.profile-tabs button.active {
+.profilePage-tabs button.active {
   background-color: #dc9c9c;
   color: black;
 }
 
-.profile-tabcontent{
+.profilePage-tabcontent{
   position: absolute;
   top: 30px;
 }
 
-.profile-posts-style{
+.profilePage-posts-style{
   width: 600px;
   height: 280px;
   overflow-y: scroll;
@@ -375,12 +379,7 @@ body {
   padding: 10px;
 }
 
-.profile-create h3{
-  padding-bottom: 10px;
-  text-decoration: underline;
-}
-
-.post-form textarea{
+.profilePage-post-form textarea{
   color: black;
   resize: none;
   width: 600px;
@@ -389,7 +388,7 @@ body {
   box-sizing: border-box;
 }
 
-#profile-submit {
+#profilePage-submit {
   background-color: #dc9c9c;;
   width: 120px;
   float: right;
