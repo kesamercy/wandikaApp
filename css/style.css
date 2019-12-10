@@ -511,6 +511,7 @@ label {
   height: 280px;
   padding: 10px;
   box-sizing: border-box;
+}
 
 .profilePage-submit{
   background-color: #778899;
@@ -537,8 +538,8 @@ label {
     opacity: 0.3;
     text-align: center;
     position: relative;
-    top: 90px;
-    left: 110px;
+    top: 30px;
+    left: 130px;
     text-transform: uppercase;
 }
 
@@ -563,6 +564,7 @@ label {
   padding-bottom: 10px;
   padding-top: 50px;
   margin-top: 50px;
+  color: white;
 }
 .settingsPage-form input{
   width: 200px;
