@@ -374,7 +374,7 @@ label {
     text-align: center;
     position: relative;
     top: 60px;
-    left: 350px;
+    left: 270px;
     text-transform: uppercase;
 }
 
@@ -501,6 +501,9 @@ label {
   padding: 10px;
 }
 
+.profilePage-post-form{
+  display: block;
+}
 .profilePage-post-form textarea{
   color: black;
   resize: none;
@@ -509,13 +512,13 @@ label {
   padding: 10px;
   box-sizing: border-box;
 
-#profilePage-submit {
+.profilePage-submit{
   background-color: #778899;
-  width: 120px;
+  width: 80px;
   float: right;
   padding-top: 5px;
   margin-top: 15px;
-  margin-right: -100px;
+  right: 200px;
   border-radius: 8px;
   display: inline-block;
   color: white;
@@ -551,7 +554,7 @@ label {
 
 .settingsPage-form {
   width: 205px;
-  heigth: 400px;
+  height: 400px;
   /*border: 3px solid yellow;*/
 }
 
