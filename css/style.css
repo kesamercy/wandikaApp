@@ -9,34 +9,78 @@ body {
     color: var(--glossWhite);
     height: 100%;
     font-family: "Fira Mono", monospace;
-    /* font-family: "Cousine", monospace; */
-    /* font-family: "Share", cursive; */
-    /* font-family: "Roboto Slab", serif; */
+    background-color: var(--brickRed);
 }
 
-.navBar li {
-    display: inline;
-    padding-left: 40px;
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    text-transform: lowercase;
-}
-
-.menuElements {
+.menuItems {
     float: right;
-    margin: 40px;
-    font-family: "Fira Mono", monospace;
+    padding-top: 30px;
 }
 
-.logoBox {
-    float: left;
+.logoImage {}
+
+.menuItems li {
+    display: inline;
+    padding: 20px;
+    font-family: "Fira Mono", monospace;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.pageTitle h1 {
+    font-family: "Roboto Slab", serif;
+    opacity: 0.1;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 100px;
+    margin-left: 20px;
 }
 
 .logo {
     width: 150px;
     height: 40px;
+    margin: 20px;
+}
+
+.welcomePage_mainContainer {
+    /* font-family: "Fira Mono", monospace; */
+}
+
+.welcomePage_content {
+    float: left;
+    margin-left: 60px;
+    text-align: left;
+    /* height: 500px;
+    width: 500px; */
+    /* background-color: black;
+    opacity: 0.5; */
+    /* z-index: -1; */
+}
+
+.big_title h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 80px;
+    color: var(--brickRed);
+    width: 50%;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.small_text p {
+    font-family: "Roboto Condensed", sans-serif;
+    width: 50%;
+    font-size: 20px;
+}
+
+.welcomePage_header {
+    background-color: var(--brickRed);
+    width: 100%;
+}
+
+.welcomePageLogo {
+    margin-right: 900px;
 }
 
 .pageDescription {
@@ -46,12 +90,6 @@ body {
 .pageDescription li {
     padding-top: 20px;
 }
-
-.pageTitle {}
-
-.slogan {}
-
-.loginBox {}
 
 .email {
     background: #ecf0f1;
@@ -81,47 +119,52 @@ body {
 
 /* about page styling */
 
-.aboutPage_container {
+.aboutPage_content {
     background: rgb(187, 195, 198);
     background: linear-gradient( 90deg, rgba(187, 195, 198, 1) 4%, rgba(251, 251, 251, 1) 24%, rgba(251, 251, 251, 1) 74%, rgba(187, 195, 198, 1) 96%);
-    height: 100vh;
+    height: 65vh;
     width: 100%;
     margin: 0;
     color: var(--matteBlack);
 }
 
-.aboutPage_casetteImage {
-    width: 150px;
-    float: right;
-    margin-right: 150px;
-    margin-top: 150px;
+.aboutPage_title {
+    font-size: 100px;
 }
 
-.aboutPage_typeWritter {
-    width: 300px;
-    float: right;
-    margin-top: 250px;
+.aboutPage_aboutText {
+    font-family: "Roboto Mono";
+    text-align: left;
+    margin-left: 300px;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    float: left;
+}
+
+.aboutPage_aboutDescription {
+    font-family: "Fira Mono", monospace;
+    width: 450px;
 }
 
 .aboutPage_aboutTitle {
     font-weight: bold;
 }
 
-.aboutPage_aboutText {
-    font-family: "Roboto Mono";
-    text-align: left;
-    margin-left: 400px;
-    margin-top: 200px;
-    letter-spacing: 2px;
+.aboutPage_casetteImage {
+    width: 150px;
+    float: right;
 }
 
-.aboutPage_aboutDescription {
-    width: 450px;
-}
-
-.aboutPage_footerWord {
+.aboutPage_typeWritter {
+    width: 300px;
     margin-top: 80px;
-    margin-left: 70px;
+    float: left;
+}
+
+.aboutPage_Images {
+    float: right;
+    margin-right: 250px;
+    margin-top: 50px;
 }
 
 
@@ -167,33 +210,121 @@ body {
     margin-top: 70px;
 }
 
-.communityPage_container {
-    height: 100vh;
+.signUp_container {
+    background: var(--glossWhite);
+    width: 30%;
+    height: 60vh;
+    border-radius: 6px;
+    margin: 180px auto 0 600px;
+    padding: 0px 0px 70px 0px;
     color: var(--glossWhite);
+    text-align: center;
+}
+
+
+/* styling for the community page  */
+
+.communityPage_content {
+    margin-top: 20px;
+}
+
+.communityPage_createPost {
+    font-family: "Fira Mono", monospace;
+    height: 200px;
+    width: 40%;
+    background-color: var(--glossWhite);
+    box-shadow: 5px 5px 5px 5px black;
+    margin: auto;
+}
+
+
+/* upload image for the community page styling */
+
+.image-upload>input {
+    display: none;
+}
+
+label {
+    color: var(--matteBlack);
+    font-family: "Fira Mono", monospace;
+    font-size: 10px;
+}
+
+.image-upload img {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.communityPage_createPost textarea {
+    margin-left: 10%;
+    margin-top: 40px;
     font-family: "Fira Mono", monospace;
 }
 
 .communityPage_title {
-    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.communityPage_postButton {
+    background-color: var(--brickRed);
+    border: none;
+    color: var(--glossWhite);
+    padding: 10px 12px;
     text-align: center;
-    margin-right: 300px;
-    color: var(--brickRed);
-    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: -25px;
+    float: right;
+    margin-right: 100px;
+    font-family: "Fira Mono", monospace;
+}
+
+.communityPage_blogPostContainer {
+    height: 350px;
+    width: 40%;
+    background-color: var(--glossWhite);
+    color: var(--matteBlack);
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 5px 5px 5px 5px black;
+    font-family: "Fira Mono", monospace;
 }
 
 .communityPage_audioPost {
-    width: 35%;
-    height: 150px;
-    background-color: var(--brickRed);
-    display: block;
+    height: 250px;
+    width: 40%;
+    background-color: var(--glossWhite);
+    color: var(--matteBlack);
+    margin: auto;
     margin-top: 40px;
-    float: right;
-    margin-right: 560px;
-    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px black;
+    font-family: "Fira Mono", monospace;
 }
 
-.communityPage_audioPost audio {
+.communityPage_blogContent {
+    font-family: "Fira Mono", monospace;
+    height: 200px;
+    margin: 40px;
     text-align: center;
+    font-size: 12px;
+    overflow: auto;
+}
+
+.communityPage_blogTitle h1 {
+    font-family: "Fira Mono", monospace;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.communityPageAudioPost_timePosted {
+    float: left;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: -160px;
 }
 
 .communityPage_postUsername {
@@ -206,20 +337,8 @@ body {
 .communityPage_timePosted {
     float: left;
     font-size: 10px;
-    margin-top: 80px;
     margin-left: 5px;
-}
-
-.communityPage_blogPost {
-    height: 350px;
-    width: 35%;
-    border-radius: 10px;
-    background-color: var(--glossWhite);
-    color: var(--matteBlack);
-    float: right;
-    margin-top: 50px;
-    margin-right: 560px;
-    box-shadow: 5px 5px 5px 5px black;
+    margin-top: -60px;
 }
 
 .communityPage_postElements {
@@ -236,14 +355,16 @@ body {
     margin-left: -50px;
 }
 
+
 .profilePage{
   background-color: var(--brickRed);
-}
+
 
 .profilePage_container {
     color: white;
     font-family: "Fira Mono", monospace;
 }
+
 
 .profilePage_title h1 {
     font-family: "Roboto Slab", serif;
@@ -386,7 +507,6 @@ body {
   height: 280px;
   padding: 10px;
   box-sizing: border-box;
-}
 
 #profilePage-submit {
   background-color: #778899;

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 
 <head>
@@ -14,31 +13,62 @@
     <title>About</title>
 </head>
 
-<body>
-    <div class="aboutPage_container">
-        <div class="flexbox-item header">
-            Header
+<body class="main_container">
+
+    <div class="navigation">
+
+        <div class="menuItems">
+            <ul>
+                <li><a href="javascript:loadPage('/wandika/community.html')"> Community </a></li>
+                <li><a id="signUp">Profile</a></li>
+                <li><a id="settings">Settings</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a id="login">Logout</a></li>
+                <!-- have a search bar here  -->
+            </ul>
+
         </div>
 
-        <img class="aboutPage_casetteImage" src="images\casettegif.gif" alt="logo">
-        <img class="aboutPage_typeWritter" src="images\typewritter.png" alt="logo">
+        <div class="logoImage">
+            <img class="logo" src="images\logo-wandika-word.png" alt="logo">
+        </div>
+    </div>
 
-        <div class="aboutPage_aboutText">
-            <h1 class="aboutPage_aboutTitle">Let's tell stories together. <br> Where we shall we start?</h1>
-            <br><br>
-            <p class="aboutPage_aboutDescription">See that type writter and cassette right there? Right now they are just objects. You are the creator. You can write your story or record your story. Tell us about your journey. We wnat to learn from your experiences. We want to know your story.
-            </p>
+    <div id="pageDetails">
 
+        <div class="pageTitle ">
+            <h1 class="aboutPage_title">about</h1>
         </div>
 
-        <div class="flexbox-item footer">
-            <h1 class="aboutPage_footerWord">Wandika</h1>
-            <p>Contact Us: example@gmail.com</p>
+        <div class="aboutPage_content">
+            <div class="aboutPage_aboutText">
+                <h1 class="aboutPage_aboutTitle">Let's tell stories together. <br> Where we shall we start?</h1>
+                <br><br>
+                <p class="aboutPage_aboutDescription">See that type writter and cassette right there? Right now they are just objects. You are the creator. You can write your story or record your story. Tell us about your journey. We wnat to learn from your experiences. We want to know your
+                    story.
+                </p>
+
+            </div>
+
+            <div class="aboutPage_Images">
+                <img class="aboutPage_casetteImage" src="images\casettegif.gif" alt="logo">
+                <img class="aboutPage_typeWritter" src="images\typewritter.png" alt="logo">
+
+            </div>
+
         </div>
 
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function() {
 
+
+
+        });
+    </script>
 
 
 </body>

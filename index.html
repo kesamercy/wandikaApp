@@ -10,9 +10,10 @@
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
-<body id="page">
+<body class="welcomePage_mainContainer">
 
     <ul class="cb-slideshow">
         <li><span>Image 01</span>
@@ -49,47 +50,58 @@
 
     <div class="container">
 
-        <header>
-            <div class="navBar">
+        <div class="navigation">
+
+            <div class="menuItems">
                 <ul>
-                    <div class="logoBox">
-                        <li>
-                            <img class="logo" src="images\logo-wandika-word.png" alt="logo">
-                        </li>
-                    </div>
-
-                    <div class="menuElements">
-                        <li><a id="login">Login</a></li>
-                        <li><a id="signUp">Sign Up</a></li>
-                        <li><a href="contact.asp">Contact</a></li>
-                        <li><a id="aboutPage">About</a></li>
-                    </div>
-
+                    <li><a href="javascript:loadLoginPage('/wandika/loginPage.php')">Login</a></li>
+                    <li><a href="javascript:loadSignupPage('/wandika/signUpPage.php')">Sign Up</a></li>
+                    <li><a href="./about.html" id="aboutPage">About</a></li>
+                    <!-- have a search bar here  -->
                 </ul>
+
             </div>
-        </header>
+
+            <!-- specially position this logo. doesn't apply for the other pages  -->
+
+            <div class="logoImage">
+                <img class="welcomePageLogo logo" src="images\logo-wandika-word.png" alt="logo">
+            </div>
+        </div>
+
+
+        <!-- you can now do it on the index page.. load everyhting there -->
 
         <div id="loginForm"></div>
         <div id="signUpForm"></div>
-        <div class="s" id="aboutPage"> </div>
+
+        <div class="pageTitle">
+            <h1>Wandika</h1>
+
+        </div>
+
+        <div class="welcomePage_content">
+
+            <div class="big_title">
+
+                <h1>At Wandika, We Want To Hear Your Story.</h1>
 
 
-        <div class="pageDescription">
-            <ul>
-                <li>
-                    <h1 class="pageTitle">Wandika</h1>
-                </li>
-                <li>
-                    <h3 class="slogan">Bringing Your Story Home</h3>
-                </li>
-                <li>
-                    <p class="aboutText"> Wandika boasts of a global community that desire to tell their stories, from their own perspctive and most importantly, be authors of their own history. We also want to show off the beauty of the places where the Wandika community
-                        stories come from. The places you see here are where life-changing stories are made. </p>
-                </li>
-            </ul>
+            </div>
+
+            <div class="small_text">
+
+                <p>We know that our community is talented and we thrive on the premise that we get to share our lives and connect with one another through the stories we tell
+                </p>
+
+
+
+            </div>
 
         </div>
     </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script>
