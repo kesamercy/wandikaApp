@@ -251,7 +251,8 @@ body {
     opacity: 0.3;
     text-align: center;
     position: relative;
-    top: 10px;
+    top: 60px;
+    left: 350px;
     text-transform: uppercase;
 }
 
@@ -282,7 +283,7 @@ body {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #6495ED;
+  background-color: #dc9c9c;;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -306,7 +307,6 @@ body {
 .profile-content {
   position: absolute;
   left: -70px;
-  /*right: 1px;*/
   width: 700px;
   height: 850px;
   /*border: 3px solid yellow;*/
@@ -325,7 +325,7 @@ body {
  position: absolute;
  width: 600px;
  height: 400px;
- top: 430px;
+ top: 450px;
  /*border: 3px solid red;*/
 }
 
@@ -390,7 +390,7 @@ body {
 }
 
 #profile-submit {
-  background-color: #6495ED;
+  background-color: #dc9c9c;;
   width: 120px;
   float: right;
   padding-top: 5px;
@@ -398,6 +398,7 @@ body {
   margin-right: -100px;
   border-radius: 8px;
   display: inline-block;
+  color: white;
 }
 
 /*for the settings */
@@ -414,7 +415,7 @@ body {
     text-align: center;
     position: relative;
     top: 90px;
-    left: 170px;
+    left: 110px;
     text-transform: uppercase;
 }
 
