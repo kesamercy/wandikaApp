@@ -294,7 +294,7 @@ body {
 }
 
 /*for the content on the right */
-.main-content{
+.profilePage-main-content{
   position: absolute;
   right: 150px;
   /*float: right;*/
@@ -401,12 +401,12 @@ body {
 }
 
 /*for the settings */
-.settings-container {
+.settingsPage-container {
   color: white;
   font-family: "Fira Mono", monospace;
 }
 
-.settings_title h1 {
+.settingsPage_title h1 {
     /*font-family: "Fira Mono", monospace;*/
     font-family: "Roboto Slab", serif;
     font-size: 100px;
@@ -418,7 +418,7 @@ body {
     text-transform: uppercase;
 }
 
-.settingsDescription {
+.settingsPageDescription {
   position: absolute;
   top: 270px;
   left: 520px;
@@ -428,20 +428,19 @@ body {
   /*border: 3px solid green;*/
 }
 
-
-.settings-form {
+.settingsPage-form {
   width: 205px;
   heigth: 400px;
   /*border: 3px solid yellow;*/
 }
 
-.settings-form label{
+.settingsPage-form label{
   font-size: 18px;
   padding-bottom: 10px;
   padding-top: 50px;
   margin-top: 50px;
 }
-.settings-form input{
+.settingsPage-form input{
   width: 200px;
   color: black;
   padding-left: 6px;
@@ -451,7 +450,7 @@ body {
   margin-bottom: 12.5px;
 }
 
-.set-icons{
+.settingsPage-icons{
   position: absolute;
   right: 140px;
   top: 272px;
