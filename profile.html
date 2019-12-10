@@ -5,18 +5,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Wandika</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wandika - My Profile</title>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Cousine|Fira+Mono|Roboto+Slab|Share&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Profile</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
-<body>
+<body class="profilePage">
     <div class="profilePage_container">
+      <header>
         <div class="navBar">
             <ul>
                 <div class="logoBox">
@@ -26,55 +31,90 @@
                 </div>
 
                 <div class="menuElements">
-                    <li class="communityPage_title">Community</li>
-                    <li><a id="login">Logout</a></li>
-                    <li><a id="signUp">Profile</a></li>
-                    <li><a href="contact.asp">Settings</a></li>
-                    <li><a id="aboutPage">About</a></li>
+                  <ul>
+                    <li><a id="community" href="community.html">Community</a></li>
+                    <li><a id="signUp" href="javascript:loadSignupPage('/wandika/signUpPage.php')" >Profile</a></li>
+                    <li><a id="settingsPage" href="settings.html" >Settings</a></li>
+                    <li><a id="aboutPage" href="about.html" >About</a></li>
+                    <li><a id="login" href="javascript:loadLoginPage('/wandika/loginPage.php')">Logout</a></li>
                     <!-- have a search bar here  -->
+                  </ul>
                 </div>
             </ul>
-
         </div>
 
-        <div class="profilePage_userDetails">
-            <h2>Mercy Nekesa</h2>
-            <p id="cityCountry">kampala,Uganda</p>
-        </div>
-        <div class="profilePage_title">
-            <h1>story</h1>
-            <p>Time</p>
-        </div>
-        <div class="profilePage_archivedPosts">
-            <ul>
-                <li> <a href=""> Past Posts</a></li>
-                <li> <a href=""> Saved Posts</a> </li>
-            </ul>
-        </div>
+            <div class="profilePage_title">
+                <h1>Profile</h1>
+            </div>
+      </header>
 
-        <img class="profilePage_clock" src="images\profilecassette.png" alt="clock">
+        <div class="profilePage-main-content">
 
+          <div class="profilePage-bio">
+            <div class="profilePage-bio-card">
+                <img src="img.jpg" alt="John" style="width:100%">
+                <h1>John Doe</h1>
+                <p class="profilePage-bio-username">johndoeisamazing</p>
+                <p class="profilePage-bio-location">Blah city, United States of Blah</p>
+                <p><button class="profilePage-bio-button">Follow</button></p>
+            </div>
+          </div>
 
+          <div class = "profilePage-content">
+            <div class="profilePage-create">
+              <h3> Create new post </h3>
 
-        <div class="profilePage_pastContent">
-
-            <p>home for past and saved content</p>
-
-        </div>
-
-        <div class="profilePage_createContent">
-
-            <p>this is the contianer for the input of the posts</p>
-            <i class="fa fa-user-circle-o profilePage_userProfileIcon" style="font-size:36px"></i>
-
-            <div class="profilePage_inputField">
-                <textarea name="" id="" cols="55" rows="5">
-                    Start Typing here or Upload your story
-                </textarea>
+                <div class="profilePage-post-form">
+                    <form action="#" name="createPostForm" method="post">
+                        <textarea id="createPostText" placeholder="Start typing..." class="text" cols="53" rows ="10" name="createPostText"></textarea>
+                        <input type="submit" value="Create Post" name="profilePage-submit" id="profilePage-submit" class="submitButton">
+                    </form>
+                </div>
             </div>
 
-        </div>
-    </div>
-</body>
+            <div class="profilePage-profile-tab">
+                  <div class="profilePage-tabs">
+                      <button class="tablinks" onclick="openTab(event, 'saved-posts')" id="defaultOpen">Saved Posts</button>
+                      <div class="profilePage-vl"></div>
+                      <button class="tablinks" onclick="openTab(event, 'past-posts')">Past Posts</button>
+                  </div>
 
+                  <div id="saved-posts" class="profilePage-tabcontent">
+                      <h3>Saved Posts</h3>
+                      <div class="profilePage-posts-style">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.jkenrfbgebqgjhbwgbbb fn de grw nkjer jrejkgre jregk;af hfke kegr vkebe nvken hkjen e eregk jkgrhgre jkeh e ek jjer jhrgre ehejrner hwfkfwkfb fbwbfr rf kbf fi kbfr bf n jrbfjrfr fbj jbf rbfrk kbfjr nr nrfn r hrbgre jrnereb n fkrbfr frbgkre fn nbklebf wnvje jrevew vrn hre ejvhre kr krv e</p>
+                      </div>
+                  </div>
+
+                  <div id="past-posts" class="profilePage-tabcontent">
+                      <h3>Past Posts</h3>
+                      <div class="profilePage-posts-style">
+                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. labore et dolore magna aliqua.jkenrfbgebqgjhbwgbbb fn de grw nkjer jrejkgre jregk;af hfke kegr vkebe nvken hkjen e eregk jkgrhgre jkeh e ek jjer jhrgre ehejrner hwfkfwkfb fbwbfr rf kbf fi kbfr bf n jrbfjrfr fbj jbf rbfrk kbfjr nr nrfn r hrbgre jrnereb n fkrbfr frbgkre fn nbklebf wnvje jrevew vrn hre ejvhre kr krv e</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("profilePage-tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
 </html>

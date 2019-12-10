@@ -356,88 +356,226 @@ label {
 }
 
 
-/* styling for the profile page */
+.profilePage{
+  background-color: var(--brickRed);
+
 
 .profilePage_container {
-    background-color: var(--brickRed);
-    height: 100vh;
     color: white;
     font-family: "Fira Mono", monospace;
 }
 
-.profilePage_title p {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-family: "Fira Mono", monospace;
-    float: right;
-    margin-right: 290px;
-    position: relative;
-    bottom: 290px;
-}
 
-.profilePage_userDetails h2 {
+.profilePage_title h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 100px;
+    opacity: 0.3;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 350px;
     text-transform: uppercase;
-    font-family: "Fira Mono", monospace;
-    margin-left: 40px;
+}
+
+/* for the bio */
+.profilePage-bio{
+  position: absolute;
+  right: 780px;
+  width: 300px;
+  height: 400px;
+  top: 50px;
+  /*border: 3px solid green;*/
+}
+
+.profilePage-bio-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #9c2626;
+}
+.profilePage-bio-username {
+  color: grey;
+  font-size: 18px;
+}
+.profilePage-bio-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #778899;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.profilePage-bio-button:hover {
+  opacity: 0.7;
+}
+
+/*for the content on the right */
+.profilePage-main-content{
+  position: absolute;
+  right: 150px;
+  /*float: right;*/
+  width: 550px;
+  height: 400px;
+  top: 350px;
+  /*border: 3px solid green;*/
+}
+
+.profilePage-content {
+  position: absolute;
+  left: -70px;
+  width: 700px;
+  height: 850px;
+  /*border: 3px solid yellow;*/
+}
+
+.profilePage-create{
+  position: absolute;
+  /*right: 150px;*/
+  width: 500px;
+  height: 1000px;
+  top: -20px;
+  /*border: 3px solid red;*/
+}
+.profilePage-create h3{
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.profilePage-profile-tab {
+ position: absolute;
+ width: 600px;
+ height: 400px;
+ top: 460px;
+ /*border: 3px solid red;*/
+}
+
+.profilePage-vl {
+  border-left: 1px solid white;
+  height: 40px;
+  position: absolute;
+  left: 20.5%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.profilePage-tabs button{
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--brickRed);
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.profilePage-tabs button:hover {
+  background-color: #dc9c9c;
+}
+
+.profilePage-tabs button.active {
+  background-color: #dc9c9c;
+  color: black;
+}
+
+.profilePage-tabcontent{
+  position: absolute;
+  top: 30px;
+}
+
+.profilePage-posts-style{
+  width: 600px;
+  height: 280px;
+  overflow-y: scroll;
+  padding-top: 5px;
+  border-style: groove;
+  padding: 10px;
+}
+
+.profilePage-post-form textarea{
+  color: black;
+  resize: none;
+  width: 600px;
+  height: 280px;
+  padding: 10px;
+  box-sizing: border-box;
+
+#profilePage-submit {
+  background-color: #778899;
+  width: 120px;
+  float: right;
+  padding-top: 5px;
+  margin-top: 15px;
+  margin-right: -100px;
+  border-radius: 8px;
+  display: inline-block;
+  color: white;
+}
+
+/*for the settings */
+.settingsPage-container {
+  color: white;
+  font-family: "Fira Mono", monospace;
+}
+
+.settingsPage_title h1 {
+    /*font-family: "Fira Mono", monospace;*/
+    font-family: "Roboto Slab", serif;
+    font-size: 100px;
+    opacity: 0.3;
+    text-align: center;
     position: relative;
-    top: 160px;
-    font-weight: bold;
+    top: 90px;
+    left: 110px;
+    text-transform: uppercase;
 }
 
-.profilePage_userDetails p {
-    font-size: 15px;
-    margin-left: 190px;
-    position: relative;
-    top: 150px;
+.settingsPageDescription {
+  position: absolute;
+  top: 270px;
+  left: 520px;
+  right: 400px;
+  width: 300px;
+  height: 300px;
+  /*border: 3px solid green;*/
 }
 
-.profilePage_clock {
-    width: 190px;
-    height: 190px;
-    position: relative;
-    top: -485px;
-    left: 650px;
+.settingsPage-form {
+  width: 205px;
+  heigth: 400px;
+  /*border: 3px solid yellow;*/
 }
 
-.profilePage_pastContent {
-    background-color: var(--glossWhite);
-    color: var(--matteBlack);
-    height: 370px;
-    width: 550px;
-    position: relative;
-    bottom: 420px;
-    margin-left: 180px;
+.settingsPage-form label{
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  margin-top: 50px;
+}
+.settingsPage-form input{
+  width: 200px;
+  color: black;
+  padding-left: 6px;
 }
 
-.profilePage_createContent {
-    background-color: var(--glossWhite);
-    color: var(--matteBlack);
-    height: 370px;
-    width: 530px;
-    position: relative;
-    bottom: 790px;
-    margin-right: 250px;
-    float: right;
+.sett-fname, .sett-lname, .sett-email, .sett-location{
+  margin-bottom: 12.5px;
 }
 
-.profilePage_archivedPosts li {
-    display: inline;
-    margin-left: 200px;
-    position: relative;
-    bottom: 290px;
-    font-weight: bold;
-    text-decoration: underline;
+.settingsPage-icons{
+  position: absolute;
+  right: 140px;
+  top: 272px;
 }
 
-.profilePage_archivedPosts a:hover {
-    text-decoration: none;
-}
-
-.profilePage_inputField textarea {
-    border-color: var(--brickRed);
-    margin: 15px;
-    align-content: left;
-}
 
 
 /* begining of the code that controls the slide show images */
@@ -842,7 +980,7 @@ label {
 /* Show at least something when animations not supported */
 
 
-/* 
+/*
 .no-cssanimations .cb-slideshow li span {
     opacity: 1;
 }
