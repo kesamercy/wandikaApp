@@ -328,7 +328,45 @@ body {
  top: 430px;
  /*border: 3px solid red;*/
 }
-#past-posts-id {
+
+.vl {
+  border-left: 1px solid white;
+  height: 40px;
+  position: absolute;
+  left: 20.5%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.profile-tabs button{
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--brickRed);
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.profile-tabs button:hover {
+  background-color: #dc9c9c;
+}
+
+.profile-tabs button.active {
+  background-color: #dc9c9c;
+  color: black;
+}
+
+.profile-tabcontent{
+  position: absolute;
+  top: 30px;
+}
+
+.profile-posts-style{
   width: 600px;
   height: 280px;
   overflow-y: scroll;
@@ -336,16 +374,6 @@ body {
   border-style: groove;
   padding: 10px;
 }
-
-#saved-posts-id {
-  width: 600px;
-  height: 280px;
-  overflow-y: scroll;
-  padding-top: 5px;
-  border-style: groove;
-  padding: 10px;
-}
-
 
 .profile-create h3{
   padding-bottom: 10px;
